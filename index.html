@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#9a3158">
+
+    <title>Happy Raksha Bandhan Bindu ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+
+    <!-- HOME SECTION -->
+    <section class="section active" id="home">
+
+        <h1>🌸 Happy Raksha Bandhan, Bindu! 🌸</h1>
+
+        <p class="subtitle">
+            A small surprise made especially for you ❤️
+        </p>
+
+        <button onclick="showSection('memories')">
+            🎁 Start Your Surprise
+        </button>
+
+    </section>
+
+
+    <!-- MEMORIES SECTION -->
+    <section class="section" id="memories">
+
+        <h1>📸 Our Beautiful Memories</h1>
+
+        <div class="memory-container">
+
+            <div class="memory">
+                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=700&q=85" alt="Friends laughing together">
+                <p>❤️ A beautiful memory together</p>
+            </div>
+
+            <div class="memory">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=85" alt="A joyful moment shared together">
+                <p>😂 Partners in crime forever!</p>
+            </div>
+
+            <div class="memory">
+                <img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=700&q=85" alt="A bright, happy memory">
+                <p>🌸 So many memories, so many smiles!</p>
+            </div>
+
+        </div>
+
+        <button onclick="showSection('letter')">
+            💌 Read My Special Message
+        </button>
+
+    </section>
+
+
+    <!-- LETTER SECTION -->
+    <section class="section" id="letter">
+
+        <h1>💌 A Letter For You</h1>
+
+        <div class="letter">
+
+            <h2>Dear Bindu ❤️</h2>
+
+            <p>
+                You are not just my sister, you are also a very special
+                part of my life.
+            </p>
+
+            <p>
+                We may fight sometimes, annoy each other, and argue a lot 😂,
+                but no matter what happens, you will always be important to me.
+            </p>
+
+            <p>
+                Thank you for all the memories, laughter, and happiness.
+            </p>
+
+            <p>
+                I am lucky to have a sister like you. ❤️
+            </p>
+
+            <h3>
+                Happy Raksha Bandhan! 🧿❤️
+            </h3>
+
+        </div>
+
+        <button onclick="showSection('thali')">
+            🪷 The Sacred Pooja Thali
+        </button>
+
+    </section>
+
+
+    <!-- SACRED POOJA THALI SECTION -->
+    <section class="section" id="thali">
+
+        <h1>🪷 The Sacred Pooja Thali 🪷</h1>
+
+        <p class="thali-subtitle">
+            Every sacred element has been lovingly arranged to begin the timeless Raksha Bandhan Ceremony
+        </p>
+
+        <div class="thali-container">
+            <!-- Memory Photos Around Thali -->
+            <div class="memory-photos-grid">
+                <div class="memory-photo-slot photo-top-left">
+                    <img id="photo1" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=300&q=85" alt="Memory 1">
+                    <button class="photo-upload-btn" onclick="document.getElementById('upload1').click()">📷 Change</button>
+                    <input type="file" id="upload1" class="photo-input" accept="image/*" onchange="uploadPhoto(this, 'photo1')">
+                </div>
+
+                <div class="memory-photo-slot photo-top-right">
+                    <img id="photo2" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=85" alt="Memory 2">
+                    <button class="photo-upload-btn" onclick="document.getElementById('upload2').click()">📷 Change</button>
+                    <input type="file" id="upload2" class="photo-input" accept="image/*" onchange="uploadPhoto(this, 'photo2')">
+                </div>
+
+                <!-- Center Thali -->
+                <div class="thali-plate">
+                    <!-- Diyas (lamps) around the thali -->
+                    <div class="diya diya-1">🕯️</div>
+                    <div class="diya diya-2">🕯️</div>
+                    <div class="diya diya-3">🕯️</div>
+                    <div class="diya diya-4">🕯️</div>
+
+                    <!-- Flowers -->
+                    <div class="flower flower-1">🌸</div>
+                    <div class="flower flower-2">🌺</div>
+                    <div class="flower flower-3">🌸</div>
+                    <div class="flower flower-4">🌺</div>
+
+                    <!-- Center sacred symbol -->
+                    <div class="thali-center">
+                        🧿
+                    </div>
+                </div>
+
+                <div class="memory-photo-slot photo-bottom-left">
+                    <img id="photo3" src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=300&q=85" alt="Memory 3">
+                    <button class="photo-upload-btn" onclick="document.getElementById('upload3').click()">📷 Change</button>
+                    <input type="file" id="upload3" class="photo-input" accept="image/*" onchange="uploadPhoto(this, 'photo3')">
+                </div>
+
+                <div class="memory-photo-slot photo-bottom-right">
+                    <img id="photo4" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=300&q=85" alt="Memory 4">
+                    <button class="photo-upload-btn" onclick="document.getElementById('upload4').click()">📷 Change</button>
+                    <input type="file" id="upload4" class="photo-input" accept="image/*" onchange="uploadPhoto(this, 'photo4')">
+                </div>
+            </div>
+        </div>
+
+        <button onclick="showSection('quiz')">
+            🎮 Play a Fun Game
+        </button>
+
+    </section>
+
+
+    <!-- QUIZ SECTION -->
+    <section class="section" id="quiz">
+
+        <h1>😄 Fun Brother-Sister Quiz</h1>
+
+        <div class="quiz-box">
+
+            <h2>Who is more annoying? 😂</h2>
+
+            <button onclick="answer()">
+                Me 😇
+            </button>
+
+            <button onclick="answer()">
+                Definitely You 😂
+            </button>
+
+        </div>
+
+        <p id="quiz-result"></p>
+
+        <button onclick="showSection('rakhi')">
+            🧿 See Your Digital Rakhi
+        </button>
+
+    </section>
+
+
+    <!-- RAKHI SECTION -->
+    <section class="section" id="rakhi">
+
+        <h1>🧿 A Special Rakhi For You</h1>
+
+        <div class="rakhi">
+
+            🪷
+            <div class="rakhi-circle">
+                ❤️
+            </div>
+            🪷
+
+        </div>
+
+        <p class="rakhi-message">
+
+            This Rakhi may be digital,
+            but my love and promise to always support you are real. ❤️
+
+        </p>
+
+        <button onclick="showSection('surprise')">
+            🎁 Open Final Surprise
+        </button>
+
+    </section>
+
+
+    <!-- FINAL SURPRISE -->
+    <section class="section" id="surprise">
+
+        <h1>🎉 SURPRISE!!! 🎉</h1>
+
+        <div class="final-message">
+
+            <h2>💖 Happy Raksha Bandhan, Bindu! 💖</h2>
+
+            <p>
+                No matter how much we fight...
+            </p>
+
+            <p>
+                No matter how much we annoy each other...
+            </p>
+
+            <p>
+                You will always be my sister,
+                my friend, and an important part of my life. ❤️
+            </p>
+
+            <h2>
+                I will always support you! 🧿❤️
+            </h2>
+
+            <h1>
+                Love You, Bindu! ❤️🌸
+            </h1>
+
+        </div>
+
+        <button onclick="celebrate()">
+            🎉 Click For Celebration!
+        </button>
+
+        <div id="confetti-container"></div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
